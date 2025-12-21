@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import galleryImg1 from "@/assets/image-gallery/gallery picture.jpg";
-import galleryImg2 from "@/assets/image-gallery/gallery picuture.jpg";
-import galleryImg3 from "@/assets/image-gallery/just a gallery picture.jpg";
-import sportingEventImg from "@/assets/image-gallery/sporting event gallery picture.jpg";
+import galleryImg1 from "@/assets/image-gallery/asu-night-party.jpeg";
+import galleryImg2 from "@/assets/image-gallery/apu-teenage-holiday-legue.png";
+import galleryImg3 from "@/assets/image-gallery/akpu-student-uniion-cybercafe.png";
+import sportingEventImg from "@/assets/image-gallery/asuu-library-day.png";
 
 const galleryImages = [
   {

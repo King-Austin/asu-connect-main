@@ -1,7 +1,7 @@
-import nightPartyImg from "@/assets/image-gallery/gallery picture.jpg";
-import sportsLeagueImg from "@/assets/image-gallery/gallery picuture.jpg";
-import cyberCafeImg from "@/assets/image-gallery/just a gallery picture.jpg";
-import asuWeekImg from "@/assets/image-gallery/sporting event gallery picture.jpg";
+import nightPartyImg from "@/assets/image-gallery/asu-night-party.jpeg";
+import sportsLeagueImg from "@/assets/image-gallery/apu-teenage-holiday-legue.png";
+import cyberCafeImg from "@/assets/image-gallery/akpu-student-uniion-cybercafe.png";
+import asuLibraryDayImg from "@/assets/image-gallery/asuu-library-day.png";
 
 const events = [
   {
@@ -26,7 +26,7 @@ const events = [
     title: "ASU Week Program",
     year: "2025",
     caption: "Library Day - Gateway to Knowledge and Discovery. Featuring book exhibitions, author talks, and digital literacy programs.",
-    image: asuWeekImg,
+    image: asuLibraryDayImg,
   },
 ];
 
