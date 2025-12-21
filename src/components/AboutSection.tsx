@@ -1,4 +1,6 @@
 import { MapPin, Users, BookOpen, Shield, Heart } from "lucide-react";
+import patronImg from "@/assets/image-gallery/CHIEF NKEM EMEKA ONUIGBO, ỤKWỤOMAKPORO ORUMBA (ASU PATRON).jpg";
+import patron2Img from "@/assets/image-gallery/PROF STEVE IBENTA (ASU PATRON).jpeg";
 
 const communityBodies = [
   "Akpu Progressive Union (APU)",
@@ -149,20 +151,42 @@ export const AboutSection = () => {
           </div>
         </div>
 
-        {/* Patron Section */}
-        <div className="mt-12 text-center">
-          <div className="inline-block bg-primary/5 rounded-xl p-8">
-            <p className="text-lg text-muted-foreground mb-4">
-              <span className="font-semibold text-primary">Patron:</span> Chief Nkem Emeka Onuigbo (Ụkwụomakporo Orumba – ASU Patron)
-            </p>
-            <div className="flex justify-center">
-              <div className="w-32 h-32 rounded-full bg-muted border-4 border-primary/20 flex items-center justify-center overflow-hidden">
-                <img
-                  src="/placeholder.svg"
-                  alt="Chief Nkem Emeka Onuigbo - ASU Patron"
-                  className="w-full h-full object-cover"
-                />
+        {/* Patrons Section */}
+        <div className="mt-16">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl font-bold text-foreground mb-2">ASU Patrons</h3>
+            <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Patron 1 */}
+            <div className="bg-primary/5 rounded-2xl p-8 text-center">
+              <div className="flex justify-center mb-6">
+                <div className="w-48 h-48 rounded-full bg-muted border-4 border-primary/30 overflow-hidden shadow-lg">
+                  <img
+                    src={patronImg}
+                    alt="Chief Nkem Emeka Onuigbo - ASU Patron"
+                    className="w-full h-full object-cover object-top scale-110"
+                  />
+                </div>
               </div>
+              <h4 className="text-xl font-bold text-foreground mb-2">Chief Nkem Emeka Onuigbo</h4>
+              <p className="text-primary font-semibold mb-2">Ụkwụomakporo Orumba</p>
+              <p className="text-sm text-muted-foreground">ASU Patron</p>
+            </div>
+
+            {/* Patron 2 */}
+            <div className="bg-primary/5 rounded-2xl p-8 text-center">
+              <div className="flex justify-center mb-6">
+                <div className="w-48 h-48 rounded-full bg-muted border-4 border-primary/30 overflow-hidden shadow-lg">
+                  <img
+                    src={patron2Img}
+                    alt="Prof. Steve Ibenta - ASU Patron"
+                    className="w-full h-full object-cover object-top scale-110"
+                  />
+                </div>
+              </div>
+              <h4 className="text-xl font-bold text-foreground mb-2">Prof. Steve Ibenta</h4>
+              <p className="text-sm text-muted-foreground">ASU Patron</p>
             </div>
           </div>
         </div>

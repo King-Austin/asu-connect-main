@@ -8,32 +8,32 @@ import provostImg from "@/assets/image-gallery/Name Okeke Adanne Maryann -Positi
 
 const executives = [
   {
-    name: "Comr. Nwankwo Nzube Timothy",
+    name: "Nwankwo Nzube Timothy",
     position: "President",
     image: presidentImg,
   },
   {
-    name: "Comr. Okolinwazi Chizoba Jacinta",
+    name: "Okolinwazi Chizoba Jacinta",
     position: "Vice President",
     image: vicePresidentImg,
   },
   {
-    name: "Comr. Ike-Ibe Charity Chinyere",
+    name: "Ike-Ibe Charity Chinyere",
     position: "General Secretary",
     image: generalSecretaryImg,
   },
   {
-    name: "Comr. Onuigbo Favour",
+    name: "Onuigbo Favour",
     position: "Financial Secretary",
     image: financialSecretaryImg,
   },
   {
-    name: "Comr. Okoli Chibuike Victory",
+    name: "Okoli Chibuike Victory",
     position: "Director of Welfare",
     image: directorWelfareImg,
   },
   {
-    name: "Comr. Okeke Adanne Maryann",
+    name: "Okeke Adanne Maryann",
     position: "Provost",
     image: provostImg,
   },

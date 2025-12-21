@@ -2,13 +2,14 @@ import nwaforAmaraImg from "@/assets/image-gallery/Nwafor amara favour.jpg";
 import okaforChukwuebukaImg from "@/assets/image-gallery/OKAFOR CHUKWUEBUKA EMMANUEL.jpg";
 import okekeFrancisImg from "@/assets/image-gallery/Okeke francis Chukwuebuka.jpg";
 import anayoJoyImg from "@/assets/image-gallery/ANAYO SOMTOCHUKWU JOY.jpeg";
+import udehOziomaImg from "@/assets/image-gallery/Udeh Ozioma Scholastica.jpg";
 
 const subCommitteeMembers = [
-  { name: "Comr. Nwafor Amara Favour", image: nwaforAmaraImg },
-  { name: "Comr. Okafor Chukwuebuka Emmanuel", image: okaforChukwuebukaImg },
-  { name: "Comr. Okeke Francis Chukwuebuka", image: okekeFrancisImg },
-  { name: "Comr. Udeh Ozioma Scholastica", image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=300&fit=crop&crop=face" },
-  { name: "Comr. Anayo Somtochukwu Joy", image: anayoJoyImg },
+  { name: "Nwafor Amara Favour", image: nwaforAmaraImg },
+  { name: "Okafor Chukwuebuka Emmanuel", image: okaforChukwuebukaImg },
+  { name: "Okeke Francis Chukwuebuka", image: okekeFrancisImg },
+  { name: "Udeh Ozioma Scholastica", image: udehOziomaImg },
+  { name: "Anayo Somtochukwu Joy", image: anayoJoyImg },
 ];
 
 export const SubCommitteeSection = () => {
