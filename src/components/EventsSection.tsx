@@ -1,27 +1,32 @@
+import nightPartyImg from "@/assets/image-gallery/gallery picture.jpg";
+import sportsLeagueImg from "@/assets/image-gallery/gallery picuture.jpg";
+import cyberCafeImg from "@/assets/image-gallery/just a gallery picture.jpg";
+import asuWeekImg from "@/assets/image-gallery/sporting event gallery picture.jpg";
+
 const events = [
   {
     title: "Annual ASU Night Party",
     year: "28th December",
     caption: "The grand annual celebration bringing together Akpu students for an unforgettable night of entertainment, networking, and community bonding.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop",
+    image: nightPartyImg,
   },
   {
-    title: "Mentorship Programs",
-    year: "Annual",
-    caption: "Leadership mentorship initiatives connecting experienced professionals with students for career guidance and personal development.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+    title: "Akpu Teenagers Holidays League",
+    year: "2025",
+    caption: "Uniting teens through sports, fun & friendship. Thrilling football matches with trophies, prizes and mentorship programs.",
+    image: sportsLeagueImg,
   },
   {
-    title: "Academic & Skill-Based Trainings",
+    title: "ASU Cyber Café & Business Center",
     year: "Ongoing",
-    caption: "Comprehensive training programs including computer skills, public speaking, and professional development workshops.",
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&h=400&fit=crop",
+    caption: "Modern facility offering typesetting, printing, computer training, and business services to restore the dignity of our ethics.",
+    image: cyberCafeImg,
   },
   {
-    title: "Cultural and Social Events",
-    year: "Various",
-    caption: "Celebrating Igbo heritage through cultural festivals, traditional performances, and community gatherings.",
-    image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=400&fit=crop",
+    title: "ASU Week Program",
+    year: "2025",
+    caption: "Library Day - Gateway to Knowledge and Discovery. Featuring book exhibitions, author talks, and digital literacy programs.",
+    image: asuWeekImg,
   },
 ];
 

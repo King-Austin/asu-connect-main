@@ -13,18 +13,18 @@ const galleryImages = [
   },
   {
     src: galleryImg2,
-    caption: "Mr & Miss ASU Winner 2024",
-    category: "Awards",
+    caption: "Akpu Teenagers Holidays League 2025",
+    category: "Sports",
   },
   {
     src: galleryImg3,
-    caption: "ASU Mentorship Program & Tournament (August 2025)",
-    category: "Programs",
+    caption: "ASU Cyber Café & Business Center",
+    category: "Initiatives",
   },
   {
     src: sportingEventImg,
-    caption: "ASU Sporting Event",
-    category: "Sports",
+    caption: "ASU Week Program 2025 - Library Day",
+    category: "Programs",
   },
 ];
 
