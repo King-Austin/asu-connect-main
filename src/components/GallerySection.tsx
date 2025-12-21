@@ -1,46 +1,30 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import galleryImg1 from "@/assets/image-gallery/gallery picture.jpg";
+import galleryImg2 from "@/assets/image-gallery/gallery picuture.jpg";
+import galleryImg3 from "@/assets/image-gallery/just a gallery picture.jpg";
+import sportingEventImg from "@/assets/image-gallery/sporting event gallery picture.jpg";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+    src: galleryImg1,
     caption: "ASU Night Party 2024",
     category: "Events",
   },
   {
-    src: "https://images.unsplash.com/photo-1559223607-180d0c16a87b?w=800&h=600&fit=crop",
+    src: galleryImg2,
     caption: "Mr & Miss ASU Winner 2024",
     category: "Awards",
   },
   {
-    src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop",
+    src: galleryImg3,
     caption: "ASU Mentorship Program & Tournament (August 2025)",
     category: "Programs",
   },
   {
-    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
-    caption: "ASU Executives with Igwe Ezeukwu II",
-    category: "Leadership",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop",
-    caption: "Easter Symposium Health Personnel (April 2024)",
-    category: "Programs",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&h=600&fit=crop",
-    caption: "ASU Cyber Café & Global Enterprise (CAC)",
-    category: "Initiatives",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
-    caption: "Graduating Pupils of Nkem Emeka Onuigbo Nursery & Primary School",
-    category: "Education",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&h=600&fit=crop",
-    caption: "ASU Cultural Event",
-    category: "Culture",
+    src: sportingEventImg,
+    caption: "ASU Sporting Event",
+    category: "Sports",
   },
 ];
 

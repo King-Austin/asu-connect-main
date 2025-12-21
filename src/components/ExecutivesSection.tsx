@@ -1,35 +1,41 @@
 import { ExecutiveCard } from "./ExecutiveCard";
+import presidentImg from "@/assets/image-gallery/Comrade Nwankwo Nzube Timothy -ASU PRESIDENT.jpg";
+import vicePresidentImg from "@/assets/image-gallery/Name Okolinwazi Chizoba Jacinta -Position Vice president.jpg";
+import generalSecretaryImg from "@/assets/image-gallery/Ike-Ibe Charity Chinyere -General Secretary.jpg";
+import financialSecretaryImg from "@/assets/image-gallery/Onuigbo Favour -Financial Secretary.jpg";
+import directorWelfareImg from "@/assets/image-gallery/Name Okoli Chibuike Victory -Position Director of welfare.jpg";
+import provostImg from "@/assets/image-gallery/Name Okeke Adanne Maryann -Position Provost.jpg";
 
 const executives = [
   {
     name: "Comr. Nwankwo Nzube Timothy",
     position: "President",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    image: presidentImg,
   },
   {
     name: "Comr. Okolinwazi Chizoba Jacinta",
     position: "Vice President",
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=face",
+    image: vicePresidentImg,
   },
   {
     name: "Comr. Ike-Ibe Charity Chinyere",
     position: "General Secretary",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
+    image: generalSecretaryImg,
   },
   {
     name: "Comr. Onuigbo Favour",
     position: "Financial Secretary",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
+    image: financialSecretaryImg,
   },
   {
     name: "Comr. Okoli Chibuike Victory",
     position: "Director of Welfare",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+    image: directorWelfareImg,
   },
   {
     name: "Comr. Okeke Adanne Maryann",
     position: "Provost",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+    image: provostImg,
   },
 ];
 
