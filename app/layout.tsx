@@ -11,50 +11,59 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://asuconnect.org"),
+  metadataBase: new URL("https://www.akpustudentsunion.com.ng"),
   title: {
-    default: "Akpu Students Union (ASU) - Home",
-    template: "%s | Akpu Students Union",
+    default: "Akpu Students Union (ASU) - Restoring the Dignity of Our Ethics",
+    template: "%s | Akpu Students Union (ASU)",
   },
   description:
-    "Akpu Students Union (ASU) is a well-recognized student body representing indigenous students of Akpu Town across various academic institutions. Join us in restoring the dignity of our ethics.",
+    "Akpu Students Union (ASU) is a well-recognized and respected student body representing indigenous students of Akpu Town across various academic institutions in Nigeria. We are committed to restoring the dignity of our ethics, promoting academic excellence, and fostering unity among Akpu students.",
   keywords: [
     "Akpu Students Union",
     "ASU",
     "Akpu Town",
     "Student Union",
-    "Orumba",
+    "Orumba South",
     "Anambra State",
     "Nigerian Students",
     "Student Leadership",
+    "Akpu Community",
+    "Student Welfare",
+    "Academic Excellence",
+    "Student Programs",
+    "Akpu Youth",
   ],
-  authors: [{ name: "Akpu Students Union" }],
+  authors: [{ name: "Akpu Students Union", url: "https://www.akpustudentsunion.com.ng" }],
   creator: "Akpu Students Union",
   publisher: "Akpu Students Union",
+  applicationName: "Akpu Students Union",
+  category: "Education",
   openGraph: {
     type: "website",
     locale: "en_NG",
-    url: "https://asuconnect.org",
-    siteName: "Akpu Students Union",
+    url: "https://www.akpustudentsunion.com.ng",
+    siteName: "Akpu Students Union (ASU)",
     title: "Akpu Students Union (ASU) - Restoring the Dignity of Our Ethics",
     description:
-      "A well-recognized and respected student body representing indigenous students of Akpu Town across various academic institutions.",
+      "A well-recognized and respected student body representing indigenous students of Akpu Town across various academic institutions in Nigeria. Join us in promoting academic excellence and unity.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Akpu Students Union",
+        alt: "Akpu Students Union Logo",
+        type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Akpu Students Union (ASU)",
+    site: "@akpustudents",
+    creator: "@akpustudents",
+    title: "Akpu Students Union (ASU) - Restoring the Dignity of Our Ethics",
     description:
-      "Representing indigenous students of Akpu Town across various academic institutions.",
+      "A well-recognized student body representing indigenous students of Akpu Town across various academic institutions.",
     images: ["/og-image.jpg"],
-    creator: "@asuconnect",
   },
   robots: {
     index: true,
@@ -67,8 +76,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
+  alternates: {
+    canonical: "https://www.akpustudentsunion.com.ng",
   },
 };
 
@@ -77,8 +86,36 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Akpu Students Union",
+    alternateName: "ASU",
+    url: "https://www.akpustudentsunion.com.ng",
+    logo: "https://www.akpustudentsunion.com.ng/asu-logo.png",
+    description:
+      "A well-recognized and respected student body representing indigenous students of Akpu Town across various academic institutions in Nigeria.",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Akpu",
+      addressRegion: "Anambra State",
+      addressCountry: "NG",
+    },
+    sameAs: [
+      "https://facebook.com/akpustudents",
+      "https://twitter.com/akpustudents",
+      "https://instagram.com/akpustudents",
+    ],
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.variable} antialiased`}>
         <Navbar />
         {children}
