@@ -1,73 +1,150 @@
-# Welcome to your Lovable project
+# Akpu Students Union (ASU) - Next.js Website
 
-## Project info
+A production-ready Next.js 15 App Router website for Akpu Students Union, migrated from a Vite React application with enhanced SEO and server-side rendering capabilities.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- ✅ **Next.js 15 App Router** - Modern React framework with file-based routing
+- ✅ **Server Components** - Default server-side rendering for optimal performance
+- ✅ **SEO Optimized** - Comprehensive metadata, Open Graph, and Twitter Cards
+- ✅ **Static Generation (SSG)** - Pre-rendered pages for fast loading
+- ✅ **Dynamic Routes** - Example implementation for events pages
+- ✅ **Tailwind CSS** - Utility-first styling with custom ASU theme
+- ✅ **Radix UI Components** - Accessible, customizable UI primitives
+- ✅ **TypeScript** - Full type safety throughout the application
+- ✅ **Sitemap & Robots.txt** - Auto-generated for search engines
+- ✅ **Security Headers** - Production-ready security configuration
+- ✅ **Vercel Optimized** - Ready for deployment on Vercel
 
-There are several ways of editing your application.
+## Project Structure
 
-**Use Lovable**
+```
+app/                        # Next.js App Router pages
+├── layout.tsx             # Root layout with Navbar/Footer
+├── page.tsx               # Home page
+├── not-found.tsx          # 404 page
+├── sitemap.ts             # Dynamic sitemap generation
+├── robots.ts              # Robots.txt configuration
+├── about/page.tsx         # About page
+├── programs/page.tsx      # Programs page
+├── contact/page.tsx       # Contact page
+├── events/
+│   ├── page.tsx           # Events listing
+│   └── [slug]/page.tsx    # Dynamic event detail pages
+└── globals.css            # Global styles
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+components/
+├── navbar.tsx             # Navigation component
+├── footer.tsx             # Footer component
+├── sections/              # Page sections
+│   ├── hero-section.tsx
+│   ├── about-section.tsx
+│   └── programs-section.tsx
+└── ui/                    # Reusable UI components
+    ├── button.tsx
+    ├── card.tsx
+    └── separator.tsx
 
-Changes made via Lovable will be committed automatically to this repo.
+_revamp/                    # Original Vite app (reference only - DO NOT IMPORT)
+```
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+npm install
+```
 
-Follow these steps:
+### Development
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+npm start
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Available Scripts
 
-## What technologies are used for this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
 
-This project is built with:
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Vercel (Recommended)
 
-## How can I deploy this project?
+1. Push your code to GitHub
+2. Import the repository in [Vercel](https://vercel.com)
+3. Vercel will auto-detect Next.js and deploy
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## SEO Configuration
 
-## Can I connect a custom domain to my Lovable project?
+The site includes comprehensive SEO:
 
-Yes, you can!
+- **Metadata API** - Page-level metadata with Open Graph and Twitter Cards
+- **Sitemap** - Auto-generated at `/sitemap.xml`
+- **Robots.txt** - Configured at `/robots.txt`
+- **Security Headers** - HSTS, CSP, and other security headers
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Customization
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Colors
+
+Update ASU brand colors in `app/globals.css`:
+
+```css
+:root {
+  --primary: 215 50% 23%;        /* ASU Blue */
+  --primary-foreground: 0 0% 100%;
+}
+```
+
+### Navigation
+
+Update links in `components/navbar.tsx`:
+
+```typescript
+const navLinks = [
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  // Add more...
+];
+```
+
+## Dynamic Routes
+
+Example dynamic route at `app/events/[slug]/page.tsx` demonstrates:
+
+- Dynamic route parameters
+- `generateStaticParams()` for SSG
+- `generateMetadata()` for SEO
+- Type-safe params handling
+
+## Migration Notes
+
+Migrated from Vite React app (`_revamp` folder) to Next.js App Router:
+
+- ✅ React Router → App Router file-based routing
+- ✅ Client-side rendering → Server Components
+- ✅ Manual SEO → Next.js Metadata API
+- ✅ Hash routing → Smooth scroll navigation
+
+**Important:** The `_revamp` folder is for reference only. Do NOT import from it at runtime.
+
+## License
+
+© 2024 Akpu Students Union. All rights reserved.
+
+## Support
+
+Contact: info@asuconnect.org
+
