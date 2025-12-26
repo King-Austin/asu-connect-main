@@ -56,7 +56,7 @@ export const HeroSection = () => {
             size="lg"
             variant="outline"
             onClick={() => scrollToSection("#programs")}
-            className="min-w-[200px] border-white text-white hover:bg-white/10"
+            className="min-w-[200px] bg-white text-primary hover:bg-white/90"
           >
             View Programs
           </Button>
